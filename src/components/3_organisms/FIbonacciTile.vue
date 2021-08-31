@@ -24,8 +24,6 @@ export default {
     },
     // generateTiles
     generateTiles: function () {
-      console.log('generateTiles')
-      this.tiles = ''
       let divName = ''
       let f0 = 0
       let f1 = 1
