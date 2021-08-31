@@ -22,11 +22,8 @@ export default {
 
       return tile
     },
-    showNumber: function (id) {
-      alert(id)
-    },
+    // generateTiles
     generateTiles: function () {
-      // generateTiles
       console.log('generateTiles')
       this.tiles = ''
       let f0 = 0
@@ -41,10 +38,7 @@ export default {
         divName = 'tile-' + fibo
         this.tiles = this.tiles + ' ' + this.createTile(divName, fibo)
       }
-
-      // generateTiles
     }
-    // end
   },
   beforeMount () {
     this.generateTiles()
@@ -54,6 +48,7 @@ export default {
 <style lang="scss" scoped>
 .section-guardian{
   margin-top:10%;
+
   .tiles {
   display: grid;
   grid-gap: 0px;
@@ -75,6 +70,7 @@ export default {
       height:10px;
       margin-top:-10px;
     }
+
     &:active div,
     &:hover div,
     &.active div{
@@ -82,7 +78,9 @@ export default {
       color:white;
       font-weight: bold;
     }
+
   }
+
   ::v-deep .tile-1{
     background-color:#669900;
     grid-row: 2 / 3;
@@ -94,26 +92,31 @@ export default {
       grid-column: 3 / 3;
     }
   }
+
   ::v-deep .tile-2{
       background-color:#ffcc00;
       grid-row: 1 / 2;
       grid-column: 2 / 4;
     }
+
   ::v-deep .tile-3{
       background-color:#ff6600;
       grid-row: 1 / 3;
       grid-column: 1 / 2;
     }
+
   ::v-deep .tile-5{
       background-color:#3332cb;
       grid-row: 3 / 6;
       grid-column: 1 / 4;
     }
+
   ::v-deep .tile-8{
       background-color:#660066;
       grid-row: 1 / 6;
       grid-column: 4 / 4;
     }
+
   }
 }
 </style>
