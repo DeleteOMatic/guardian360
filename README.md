@@ -4,6 +4,9 @@
 * nodeJS - v14.17.5
 * npm - 6.14.14
 * vueJS - 2.6.10
+
+Install: npm install
+Run: npm run serve
 ## Requirements
 
 * Usage of VueJS and SASS
