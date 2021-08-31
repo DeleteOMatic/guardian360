@@ -1,15 +1,12 @@
 <template>
   <div id="app">
-    <Header />
     <router-view />
   </div>
 </template>
 <script>
-import Header from '@/components/3_organisms/Header.vue'
 
 export default {
   components: {
-    Header
   },
   watch: {
     $route (to, from) {
