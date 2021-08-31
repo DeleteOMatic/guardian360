@@ -1,5 +1,5 @@
 # Frontend Assignment
-Test
+
 ## Requirements
 
 * Usage of VueJS and SASS
