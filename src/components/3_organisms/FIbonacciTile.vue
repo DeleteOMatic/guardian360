@@ -1,7 +1,7 @@
 <template>
   <section class="section-guardian">
     <h3>Guardian360 - Assesment</h3>
-    <div v-html="tiles" class="tiles"></div>
+    <div v-html="tiles" class="tiles" ></div>
   </section>
 </template>
 <script>
@@ -18,7 +18,7 @@ export default {
   methods: {
     // createTile
     createTile: function (name, fibo) {
-      let tile = '<div class="tile ' + name + '" ><div>' + fibo + '</div></div>'
+      let tile = '<div class="tile ' + name + '" onClick="this.classList.toggle(&quot;active&quot;);"><div>' + fibo + '</div></div>'
 
       return tile
     },
@@ -46,7 +46,7 @@ export default {
     }
     // end
   },
-  mounted () {
+  beforeMount () {
     this.generateTiles()
   }
 }
@@ -77,7 +77,7 @@ export default {
     }
     &:active div,
     &:hover div,
-    &.active{
+    &.active div{
       display: block;
       color:white;
       font-weight: bold;
