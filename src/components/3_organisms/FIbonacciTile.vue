@@ -1,6 +1,6 @@
 <template>
   <section class="section-guardian">
-    <h3>Guardian360 - Assesment</h3>
+    <h3>{{ title }}</h3>
     <div v-html="tiles" class="tiles" ></div>
   </section>
 </template>
@@ -11,7 +11,7 @@ export default {
   },
   data () {
     return {
-      info: 'init',
+      title: 'Guardian360 - Assesment',
       tiles: ''
     }
   },
