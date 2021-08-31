@@ -26,10 +26,10 @@ export default {
     generateTiles: function () {
       console.log('generateTiles')
       this.tiles = ''
+      let divName = ''
       let f0 = 0
       let f1 = 1
       let fibo = 0
-      let divName = ''
 
       for (let i = 0; i < 6; i++) {
         f0 = f1
@@ -69,6 +69,7 @@ export default {
       width:10px;
       height:10px;
       margin-top:-10px;
+      font-size: 1rem;
     }
 
     &:active div,
